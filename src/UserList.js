@@ -17,11 +17,11 @@ class UserList extends Component{
 			<div>
         		{/* 输入用户信息，点击“新增”按钮可以增加用户 */}
 		        <div>
-		          <div>Username: <input type='text' value={username} onChange={e=>this.setState({username:e.target.value})} /></div>
-		          <div>Age: <input type='number' value={age} onChange={e=>this.setState({age:e.target.value})} /></div>
-		          <div>Gender:
-		            <label>Male: <input type='radio' onChange={e=>this.setState({gender:e.target.value})} name='gender' value='male' /></label>
-		            <label>Female: <input type='radio' onChange={e=>this.setState({gender:e.target.value})} name='gender' value='female' /></label>
+		          <div>用户名: <input type='text' value={username} onChange={e=>this.setState({username:e.target.value})} /></div>
+		          <div>年龄: <input type='number' value={age} onChange={e=>this.setState({age:e.target.value})} /></div>
+		          <div>性别:
+		            <label>男: <input type='radio' onChange={e=>this.setState({gender:e.target.value})} name='gender' value='男' /></label>
+		            <label>女: <input type='radio' onChange={e=>this.setState({gender:e.target.value})} name='gender' value='女' /></label>
 		          </div>
 		          <button onClick={()=>addUser(this.state)}>增加</button>
 		        </div>
